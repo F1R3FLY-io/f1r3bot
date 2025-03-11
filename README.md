@@ -46,7 +46,7 @@ f1r3fly-discord-bot:latest
 
 ## Connection with Oracle clusters:
 
-Communication with the oracle. On Oracle, we have several clusters, for communication (deployment) on the Oracle cluster, we need to substitute the IP address of the node from the cluster, as well as the 30002 port in the docker or fat jar launch command.
+Communication with the Oracle. On Oracle, we have several clusters, for communication (deployment) on the Oracle cluster, we need to substitute the IP address of the node from the cluster, as well as the 30002 port in the docker or fat jar launch command.
 Example with docker:
 
 ```angular2html
@@ -73,5 +73,5 @@ f1r3fly-discord-bot:latest
 
 ## TODO:
 
-1. When the compiler can convert meTTa code into rholang code, add -l (language) flag to !deploy and !eval commands, but
+1. When the compiler can convert meTTa code into rholang code, add -l (language) flag to !deploy and !eval commands.
 2. Create X(Twitter) bot.
