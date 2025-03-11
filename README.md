@@ -1,11 +1,11 @@
-## Basic Discrod bot for F1R3FLY.io!
+## Basic Discord bot for F1R3FLY.io!
 
-Project for discrod bot that can communicate with the f1r3fly platform.
+Project for Discord bot that can communicate with the F1r3fly platform.
 
 ## Local development:
 
 So, generally you should build communication between discord bot(jar or docker) and f1r3fly(jar or cloud).[](https://)
-Make bot .jar file from root folder:
+Make a .jar file from the root folder:
 
 ```angular2html
 ./gradlew clean shadowJar --rerun-tasks  
@@ -27,7 +27,7 @@ java -Ddiscord.bot.token=$DISCORD_BOT_TOKEN \ -Dgrpc.node.host=$GRPC_NODE_HOST \
 -jar build/libs/F1r3flyBots-1.0-SNAPSHOT-shadow.jar  
 ```
 
-You can also run the bot with docker: after you make a fat jar with shadowJar command you can run the next command to build a docker image:
+You can also run the bot with docker: after you make a fat jar with the shadowJar command, you can run the next command to build a docker image:
 
 ```angular2html
 ./gradlew buildDockerImage  
