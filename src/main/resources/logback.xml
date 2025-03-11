@@ -1,0 +1,40 @@
+<configuration>
+    <!--
+    Spring Boot uses Logback as the default logging framework,
+    so to exclude all internal Spring Boot logs inside your Docker container,
+    so we need this file to override the default logback-spring.xml file.
+    -->
+
+    <!-- Enabling logs for JDA (Discord API) and Neovisionaries -->
+    <logger name="net.dv8tion" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="com.neovisionaries" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+    <!-- Disabling logs for Spring in Docker container -->
+    <logger name="org.springframework" level="OFF" />
+    <logger name="org.springframework.boot" level="OFF" />
+
+    <!-- Setting log level for other packages -->
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <!-- Enabling logs for bot and deployer classes -->
+    <logger name="io.f1r3fly.Bot" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+    <logger name="io.f1r3fly.grcp.Deployer" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE" />
+    </logger>
+
+
+    <!-- Console appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+</configuration>
