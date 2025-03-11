@@ -61,14 +61,15 @@ f1r3fly-discord-bot:latest
 ## Supported commands:
 
 1. `!help`
+   
    ![img.png](src/main/resources/images/help.png)
-2. `!deploy inline rholang-code`
+3. `!deploy inline rholang-code`
    ![img.png](src/main/resources/images/inline_deploy.png)
-3. `!deploy -f fileName`
+4. `!deploy -f fileName`
    ![img.png](src/main/resources/images/file_deploy.png)
-4. `!eval inline rholang-code`
+5. `!eval inline rholang-code`
    ![img.png](src/main/resources/images/inline_eval.png)
-5. `!eval -f fileName`
+6. `!eval -f fileName`
    ![img.png](src/main/resources/images/file_eval.png)
 
 ## TODO:
